@@ -92,5 +92,5 @@ func (this *YunPian) TplSend(mobile, tpl_value string, tpl_id int) (string, erro
 }
 
 func (this *YunPian) DefTplSend(mobile, code, company string, tpl_id int) (string, error) {
-	return this.TplSend(mobile, fmt.Sprintf(def_tpl_value, code, company, tpl_id))
+	return this.TplSend(mobile, fmt.Sprintf(def_tpl_value, code, company), tpl_id)
 }
